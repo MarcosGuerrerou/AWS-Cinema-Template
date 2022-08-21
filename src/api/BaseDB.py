@@ -284,13 +284,6 @@ class BaseDynamoDBAbstraction(object):
         
         return arguments
     
-    def validate_vin(self, vin: str):
-        import re
-        if not re.match(r'\b[(A-H|J-N|P|R-Z|0-9)]{17}\b', vin):
-            raise InvalidVIN('Vehicle Identification Number is not valid')
-        else:
-            return True
-
     @staticmethod
     def convert_dtypes(item: dict, type: str)-> dict:
         """Convert a dictionary retrieved from dynamodb to native python datatypes"""
