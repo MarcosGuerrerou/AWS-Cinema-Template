@@ -9,7 +9,6 @@ Imports:
     - decimal.Decimal: For type conversion supported by DynamoDB.
     - Exceptions: Exceptions collection for API responses.
     - boto3: To initialize Table and DynamoDB resource instances.
-    - re: Regular expression matching for Vehicle Identification Numbers.
     - boto3.dynamodb.types.Binary: Binary representation for DynamoDB.
     - json: JSON parsing and dumping.
 """
